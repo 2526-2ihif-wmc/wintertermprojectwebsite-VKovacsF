@@ -1,21 +1,21 @@
 body {
     font-family: Consolas, Sans-Serif;
-    background-color: darkred;
+    background-image: radial-gradient(circle, brown, black);
 }
 
-ul {
+.navbar div, .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #592c0f;
 }
 
-ul li {
+.navbar ul li {
     float: left;
 }
 
-ul li a {
+.navbar ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -23,6 +23,11 @@ ul li a {
     text-decoration: none;
 }
 
-ul li a:hover {
-    background-color: #111111;
+.navbar li a:hover {
+    background-color: #673815;
+}
+
+#lobbyDenzel {
+    height: 50%;
+    text-align: center;
 }
