@@ -27,7 +27,24 @@ body {
     background-color: #673815;
 }
 
-#lobbyDenzel {
-    height: 50%;
+#lobbyDenzel img {
+    width: 15rem;
+}
+
+#lobbyDenzel img:hover {
+    box-shadow: 5px 10px 8px;
+}
+
+h1 {
+    color: white;
     text-align: center;
 }
+
+.content-left {
+    color: white;
+    background-color: #592c0f;
+    border-radius: 5px;
+    display: flex;
+    width: 50%;
+}
+
