@@ -44,3 +44,59 @@ body {
 .navbar ul li a:hover {
     background-color: #c2c2c2;
 }
+
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #888888;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #898989;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.disco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    letter-spacing: 1px;
+}
+
+.disco div {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.disco div a {
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.disco div a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
