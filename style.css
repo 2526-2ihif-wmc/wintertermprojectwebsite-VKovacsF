@@ -1,64 +1,46 @@
-body {
-    font-family: Consolas, Sans-Serif;
-    background-image: radial-gradient(circle, brown, black);
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-.navbar div, .navbar ul {
-    list-style-type: none;
+body {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    background: radial-gradient(circle at top, #8B4513, #2b1810, #000000);
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-    top: 0;
-    z-index: 999;
-    overflow: hidden;
-    background-color: #592c0f;
+    min-height: 100vh;
 }
 
-.navbar li {
-    position: sticky !important;
+.navbar {
+    background-color: #592c0f;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
-    float: left;
+    margin: 0;
 }
 
 .navbar ul li a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 16px 28px;
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.navbar li a:hover {
-    background-color: #673815;
+.navbar ul li a:hover {
+    background-color: #7a3d14;
 }
-
-#lobbyDenzel img {
-    width: 50%;
-}
-
-#lobbyDenzel img:hover {
-    box-shadow: 5px 10px 8px;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-.content-left {
-    color: white;
-    background-color: #592c0f;
-    border-radius: 5px;
-    display: flex;
-    width: 50%;
-}
-
-.div1 { margin-left: auto;
-        color: white;
-        background-color: #592c0f;
-        border-radius: 5px;
-        display: flex;
-        width: 50%;}
-
