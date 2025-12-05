@@ -100,3 +100,47 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
+
+.button-N {
+    background-image: linear-gradient(to right, #000000 0%, #c4934b 40%, #944276 80%, #000000 100%);
+    color: gold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+
+.button-N::after {
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, #c4934b 0%, #944276 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.button-N:hover::after {
+    opacity: 1;
+}
+
+.button-I {
+    background-image: linear-gradient(to right, #423f3d 0%, #beb23b 50%, #484547 100%);
+    color: #eded1b;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+
+.button-I::after {
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, #887f2b 0%, #a49933 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.button-I:hover::after {
+    opacity: 1;
+}
