@@ -3,7 +3,6 @@
 }
 
 body {
-    font-family: Consolas, Monaco, 'Courier New', monospace;
     background: radial-gradient(circle at top, #ffffff, #848484, #000000);
     background-attachment: fixed;
     margin: 0;
@@ -12,6 +11,7 @@ body {
 }
 
 .navbar {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
     background-color: #838383;
     width: 100%;
     position: sticky;
@@ -38,7 +38,7 @@ body {
     padding: 16px 28px;
     text-decoration: none;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 .navbar ul li a:hover {
@@ -51,6 +51,7 @@ body {
 }
 
 .cta-button {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
     display: inline-block;
     background-color: #888888;
     color: white;
@@ -86,7 +87,7 @@ body {
 
 .disco div a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 8px;
     padding: 20px;
     text-decoration: none;
@@ -102,6 +103,7 @@ body {
 }
 
 .button-N {
+    font-family: "DejaVu Sans", monospace;
     background-image: linear-gradient(to right, #000000 0%, #c4934b 40%, #944276 80%, #000000 100%);
     color: gold;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
@@ -124,6 +126,7 @@ body {
 }
 
 .button-I {
+    font-family: "Old English Text MT";
     background-image: linear-gradient(to right, #423f3d 0%, #beb23b 50%, #484547 100%);
     color: #eded1b;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
@@ -143,4 +146,84 @@ body {
 
 .button-I:hover::after {
     opacity: 1;
+}
+
+.button-T {
+    background-image: linear-gradient(to right, #000000 0%, #b8b8b8 50%, #000000 100%);
+    color: black;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+
+.button-T:hover {
+    color: white;
+}
+
+.button-T::after {
+    content: "";
+    inset: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.button-T:hover::after {
+    opacity: 1;
+}
+
+.button-Z {
+    background-image: linear-gradient(to right, #b7b7b7 0%, #114735 50%, #a1bfbc 100%);
+    color: #dd4827;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    font-family: Impact, Haetten, Arial;
+}
+
+.button-Z::after {
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, #114735 0%, #dc4827 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.button-Z:hover::after {
+    opacity: 1;
+}
+
+.button-M {
+    background-image: linear-gradient(to right, #5fa999 0%, #01044e 50%, #889d88 100%);
+    color: #743f85;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    font-family: Impact;
+}
+
+.button-M::after {
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, #5fa999 -10%, #01044e 50%, #889d88 110%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.button-M:hover::after {
+    opacity: 1;
+}
+
+.button-K {
+    background-image: linear-gradient(to right, #aaaaaa 0%, #c1bfbf 50%, #fde0f1 100%);
+    color: #000000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    font-family: Fantasy;
 }
