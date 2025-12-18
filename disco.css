@@ -223,7 +223,6 @@ body {
 .button-K {
     background-image: linear-gradient(to right, #aaaaaa 0%, #c1bfbf 50%, #fde0f1 100%);
     color: #000000;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
     transition: 1s;
     font-family: Fantasy;
 }
