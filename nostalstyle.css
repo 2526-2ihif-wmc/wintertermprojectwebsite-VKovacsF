@@ -97,6 +97,50 @@ body {
     transform: scale(1.03);
 }
 
+.tracklist {
+            background-color: black;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .tracklist h3 {
+            color: #b88103;
+            font-size: 1.5em;
+            margin: 0 0 15px 0;
+            border-bottom: 2px solid #b88103;
+            padding-bottom: 10px;
+        }
+
+        .tracklist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tracklist ul li {
+            color: #b88103;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+            font-size: 1.05em;
+            transition: all 0.2s ease;
+        }
+
+        .tracklist ul li:last-child {
+            border-bottom: none;
+        }
+
+        .tracklist ul li:hover {
+            color: white;
+            padding-left: 10px;
+        }
+
+        .album-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
 .album-info {
     flex: 1;
     min-width: 300px;

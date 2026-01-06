@@ -3,7 +3,7 @@
 }
 
 body {
-    background: radial-gradient(circle at top, #ffffff, #848484, #000000);
+    background: radial-gradient(circle at top, #ffffff, #848484, #bab5b4);
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 
 .navbar {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    background-color: #838383;
+    background-color: black;
     width: 100%;
     position: sticky;
     top: 0;
@@ -175,7 +175,7 @@ body {
 }
 
 .button-Z {
-    background-image: linear-gradient(to right, #b7b7b7 0%, #114735 50%, #a1bfbc 100%);
+    background-image: linear-gradient(to right, #114735);
     color: #dd4827;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
     transition: 1s;

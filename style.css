@@ -66,18 +66,25 @@ h1 {
 }
 
 .main-content {
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 30px auto;
     padding: 0 20px;
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.content-left {
+.text-content {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.content {
+
     color: white;
     background-color: rgba(89, 44, 15, 0.9);
     border-radius: 12px;
@@ -87,7 +94,7 @@ h1 {
     line-height: 1.8;
 }
 
-.content-left p {
+.content p {
     margin: 0;
     font-size: 1.05em;
 }
