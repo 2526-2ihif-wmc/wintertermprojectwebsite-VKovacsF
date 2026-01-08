@@ -12,7 +12,7 @@ body {
 
 .navbar {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    background-color: black;
+    background-color: linear-gradient(to right, white, black 90%);
     width: 100%;
     position: sticky;
     top: 0;
