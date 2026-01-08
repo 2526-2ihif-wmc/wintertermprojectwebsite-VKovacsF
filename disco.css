@@ -3,7 +3,7 @@
 }
 
 body {
-    background: radial-gradient(circle at top, #ffffff, #848484, #bab5b4);
+    background-image: radial-gradient(circle at center, white, black 90%);
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -73,10 +73,10 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 5rem auto;
+    margin: 3.5rem auto;
     padding: 2rem;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     letter-spacing: 1px;
 }
 
@@ -185,7 +185,7 @@ body {
 .button-Z::after {
     content: "";
     inset: 0;
-    background-image: linear-gradient(to right, #114735 0%, #dc4827 100%);
+    background-image: linear-gradient(to right, #d5d0cc 0%, #0f3f2c 50%, #465366 100%);
     opacity: 0;
     transition: opacity 0.4s;
     z-index: -1;
