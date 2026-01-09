@@ -118,12 +118,12 @@ h1 {
     box-shadow: 0 12px 30px rgba(139, 69, 19, 0.6);
 }
 
-.cta-section {
+.button-sec {
     text-align: center;
     padding: 60px 20px;
 }
 
-.cta-button {
+.button {
     display: inline-block;
     background-color: #592c0f;
     color: white;
@@ -136,7 +136,7 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.cta-button:hover {
+.button:hover {
     background-color: #7a3d14;
     box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
 }
