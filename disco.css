@@ -74,8 +74,6 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 3.5rem auto;
-    padding: 2rem;
-    width: 90%;
     max-width: 1000px;
     letter-spacing: 1px;
 }
