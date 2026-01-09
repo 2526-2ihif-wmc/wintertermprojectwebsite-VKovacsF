@@ -94,6 +94,7 @@ body {
 .album-cover {
     flex: 0 0 400px;
     min-width: 300px;
+    margin-bottom: 20px;
 }
 
 .album-cover img {
