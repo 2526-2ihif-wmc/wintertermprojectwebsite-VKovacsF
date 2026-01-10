@@ -81,6 +81,16 @@ body {
     min-width: 300px;
 }
 
+.cover-info {
+    margin-top: 30px;
+}
+
+.album-cover p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
 .album-cover img {
     width: 100%;
     border-radius: 12px;

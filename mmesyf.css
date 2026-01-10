@@ -4,7 +4,9 @@
 
 body {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    background: radial-gradient(circle at top , #747a33, #606060 60%);
+    background-image: url("MMESYFbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -13,12 +15,12 @@ body {
 
 
 .navbar {
-    background-color: #747a33;
+    background-color: #6d586f80;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -44,8 +46,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #9fa746;
-    transform: translateY(-2px);
+    background-color: hsla(16, 18%, 52%, 0.483);
 }
 
 .album-header {
@@ -54,30 +55,39 @@ body {
 }
 
 .album-header h1 {
-    font-family: "Old English Text MT";
+    font-family: Impact;
     font-size: 3em;
     margin: 0 0 10px 0;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 5px 3px 6px #444b91;
     letter-spacing: 2px;
 }
 
 .album-header .release-date {
-    color: #fbff00;
-    font-size: 1.1em;
+    color: #00004c;
     margin: 0;
 }
 
+.release-date {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.release-date b {
+    background-color: #444b91;
+    padding: 0.3rem;
+}
+
 .album-header > h1 {
-    color: #fbff00;
+    color: #00004c;
 }
 
 .album-container {
-    max-width: 1700px;
+    max-width: 80%;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;
     gap: 40px;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -87,11 +97,26 @@ body {
     min-width: 300px;
 }
 
+.cover-info {
+    margin-bottom: 30px;
+    background-color: #19c9ac94;
+    border-radius: 12px;
+    color: #00055a;
+}
+
+.album-cover p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 25px;
+}
+
 .album-cover img {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .album-cover img:hover {
@@ -99,18 +124,18 @@ body {
 }
 
 .tracklist {
-    background-color: black;
+    background-color: #19c9ac94;
     border-radius: 12px;
     padding: 25px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .tracklist h3 {
-    color: #747a33;
+    color: #00055a;
     font-size: 1.5em;
     margin: 0 0 15px 0;
-    border-bottom: 2px solid #747a33;
+    border-bottom: 2px solid #00055a;
     padding-bottom: 10px;
 }
 
@@ -121,10 +146,11 @@ body {
 }
 
 .tracklist ul li {
-    color: #747a33;
+    color: #00055a;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+    border-bottom: 2px solid #00055a8a;
     font-size: 1.05em;
+    font-weight: bold;
     transition: all 0.2s ease;
 }
 
@@ -143,7 +169,7 @@ body {
 }
 
 .info-section {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #19c9ac94;
     border-radius: 12px;
     padding: 30px;
     margin-bottom: 30px;
@@ -152,10 +178,11 @@ body {
 }
 
 .info-section h2 {
-    color: #747a33;
+    font-style: italic;
+    color: #00055a;
     font-size: 1.8em;
     margin: 0 0 20px 0;
-    border-bottom: 2px solid #747a33;
+    border-bottom: 2px solid #00055a;
     padding-bottom: 10px;
 }
 
@@ -176,7 +203,7 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: #747a33;
+    background-color: #6d586f;
     color: white;
     padding: 15px 40px;
     text-decoration: none;
@@ -189,7 +216,11 @@ body {
 }
 
 .cta-button:hover {
-    background-color: rgb(179, 173, 9);
+    background-color: #97799a;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
+}
+
+b {
+    color: #00055a;
+    font-size: 1.1rem;
 }
