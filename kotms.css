@@ -4,7 +4,9 @@
 
 body {
     font-family: Consolas, Monaco, 'Courier New', monospace;
-    background: radial-gradient(circle at top , #d5d0cc, #465366 80%);
+    background-image: url(KOTMSbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -13,7 +15,7 @@ body {
 
 
 .navbar {
-    background-color: #0f3f2c;
+    background-color: #3a3a3a;
     width: 100%;
     position: sticky;
     top: 0;
@@ -36,7 +38,7 @@ body {
 
 .navbar ul li a {
     display: block;
-    color: #df4622;
+    color: white;
     padding: 16px 28px;
     text-decoration: none;
     font-weight: bold;
@@ -45,43 +47,43 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #768431;
-    color: white;
+    background-color: #c5c5c5;
+    color: #3a3a3a;
 }
 
 .album-header {
     margin: auto;
-    align-self: center;
+    inline-size: fit-content;
+    border-radius: 1rem;
     text-align: center;
     padding: 40px 20px 20px;
-    border: 12px solid black;
-    inline-size: fit-content;
-    background-color: white;
+    font-size: 1.1em;
 }
 
 .album-header h1 {
-    font-family: Impact, Haetten, Arial;
+    font-family: Fantasy;
     font-size: 3em;
     margin: 0 0 10px 0;
+    text-shadow: 2px 2px 99px #c5c5c5;
     letter-spacing: 2px;
 }
 
+.release-date {
+    text-shadow: 1px 1px 5px #c5c5c5;
+     font-size: 1.2em;
+}
+
 .album-header .release-date {
-    color: #df4622;
-    font-size: 1.1em;
+    color: #131313;
     margin: 0;
 }
 
-.release-date {
-    font-weight: bold;
-}
-
 .album-header > h1 {
-    color: #df4622;
+    color: #131313;
 }
 
 .album-container {
-    max-width: 65%;
+    max-width: 1700px;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;
@@ -94,7 +96,6 @@ body {
 .album-cover {
     flex: 0 0 400px;
     min-width: 300px;
-    margin-bottom: 20px;
 }
 
 .album-cover img {
@@ -108,22 +109,42 @@ body {
     transform: scale(1.03);
 }
 
+.alt-cover {
+    flex: 0 0 200px;
+    gap: 10px;
+    min-width: 100px;
+}
+
+.alt-cover img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.alt-cover {
+    text-align: center;
+    font-weight: bold;
+}
+
+.alt-cover img:hover {
+    transform: scale(1.2);
+}
+
 .tracklist {
-    background-color: white;
-    border: 15px solid black;
+    background-color: #c5c5c592;
+    border-radius: 12px;
     padding: 25px;
     margin-top: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-.tracklist h3 {
-    font-family: Impact, Haetten, Arial;
-    letter-spacing: 1.1px;
-    color: #0f3f2c;
-    font-size: 1.5em;
+.tracklist h4 {
+    color: #131313;
+    font-size: 1.2rem;
     margin: 0 0 15px 0;
-    border-bottom: 2px solid #df4622;
+    border-bottom: 2px solid #131313;
     padding-bottom: 10px;
 }
 
@@ -134,11 +155,29 @@ body {
 }
 
 .tracklist ul li {
-    color: #df4622;
+    color: #131313;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+    border-bottom: 1px solid #1313139a;
     font-size: 1.05em;
     transition: all 0.2s ease;
+}
+
+.mixtape-exclusive {
+    color: red;
+    transition: all 0.2s ease;
+}
+
+.mixtape-exclusive:hover {
+    color: white;
+}
+
+.repackage-exclusive {
+    color: purple;
+    transition: all 0.2s ease;
+}
+
+.repackage-exclusive:hover {
+    color: white;
 }
 
 .tracklist ul li:last-child {
@@ -146,6 +185,7 @@ body {
 }
 
 .tracklist ul li:hover {
+    color: white;
     padding-left: 10px;
 }
 
@@ -155,33 +195,39 @@ body {
 }
 
 .info-section {
-    background-color: white;
-    border: 15px solid black;
+    background-color: #c5c5c592;
+    border-radius: 12px;
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     line-height: 1.8;
 }
 
 .info-section h2 {
-    font-family: Impact, Haetten, Arial;
-    letter-spacing: 1.2px;
-    color: #0f3f2c;
+    color: #131313;
     font-size: 1.8em;
     margin: 0 0 20px 0;
-    border-bottom: 2px solid #0f3f2c;
+    border-bottom: 2px solid #131313;
     padding-bottom: 10px;
 }
 
 .info-section p {
     margin: 0 0 15px 0;
     font-size: 1.05em;
-    color:#df4622
 }
 
 .info-section p:last-child {
     margin-bottom: 0;
 }
 
+.mini-section {
+    background-color: #c5c5c592;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    line-height: 1.8;
+}
 
 .cta-section {
     text-align: center;
@@ -190,26 +236,26 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: white;
-    border: 12px solid black;
-    color: #df4622;
+    background-color: #c5c5c5;
+    color: #131313;
     padding: 15px 40px;
     text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
     font-size: 1.1em;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.cta-button a {
-    font-family: Impact, Haetten, Arial;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
+    background-color: #131313;
+    color: #c5c5c5;
+    transform: scale(1.2);
 }
 
-b {
-    font-size: 1.05rem;
+.quote {
+    font-size: larger;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px #131313;
 }

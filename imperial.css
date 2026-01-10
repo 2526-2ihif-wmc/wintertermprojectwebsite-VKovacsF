@@ -45,7 +45,6 @@ body {
 
 .navbar ul li a:hover {
     background-color: #9fa746;
-    transform: translateY(-2px);
 }
 
 .album-header {
