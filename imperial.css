@@ -71,7 +71,7 @@ body {
 }
 
 .album-container {
-    max-width: 1700px;
+    max-width: 1500px;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;
@@ -106,10 +106,12 @@ body {
 }
 
 .tracklist h3 {
-    color: #747a33;
-    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: "Old English Text MT";
+    color: #fbff00;
+    font-size: 1.9em;
     margin: 0 0 15px 0;
-    border-bottom: 2px solid #747a33;
+    border-bottom: 2px solid #fbff00;
     padding-bottom: 10px;
 }
 
@@ -120,9 +122,9 @@ body {
 }
 
 .tracklist ul li {
-    color: #747a33;
+    color: #fbff00;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+    border-bottom: 1px solid #fbff0094;;
     font-size: 1.05em;
     transition: all 0.2s ease;
 }
@@ -151,10 +153,12 @@ body {
 }
 
 .info-section h2 {
-    color: #747a33;
-    font-size: 1.8em;
+    letter-spacing: 1px;
+    font-family: "Old English Text MT";
+    color: #fbff00;
+    font-size: 1.9em;
     margin: 0 0 20px 0;
-    border-bottom: 2px solid #747a33;
+    border-bottom: 2px solid #fbff00;
     padding-bottom: 10px;
 }
 
@@ -191,4 +195,9 @@ body {
     background-color: rgb(179, 173, 9);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
+}
+
+b {
+    color: #fbff00;
+    font-size: larger;
 }

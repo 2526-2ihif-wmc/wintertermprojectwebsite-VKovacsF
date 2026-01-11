@@ -134,6 +134,8 @@ body {
 }
 
 .tracklist h3 {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
     color: white;
     font-size: 1.5em;
     margin: 0 0 15px 0;
@@ -178,6 +180,8 @@ body {
 }
 
 .info-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
     color: white;
     font-size: 1.8em;
     margin: 0 0 20px 0;
@@ -223,5 +227,5 @@ b {
     border-radius: 3px;
     background-color: white;
     color: black;
-    padding: 1px;
+    padding: 1.2px;
 }

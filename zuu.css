@@ -81,7 +81,7 @@ body {
 }
 
 .album-container {
-    max-width: 65%;
+    max-width: 1700px;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;

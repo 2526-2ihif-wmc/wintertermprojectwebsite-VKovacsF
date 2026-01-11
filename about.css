@@ -95,7 +95,6 @@ body {
     background-color: black;
     border-radius: 12px;
     padding: 25px;
-    margin-top: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -136,6 +135,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 12px;
     padding: 10px;
+    padding-bottom: 20px;
     margin-bottom: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     line-height: 1.8;
