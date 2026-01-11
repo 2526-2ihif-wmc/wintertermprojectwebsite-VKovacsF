@@ -141,8 +141,10 @@ body {
 }
 
 .tracklist h4 {
+    font-family: Fantasy;
+    letter-spacing: 1px;
     color: #131313;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0 0 15px 0;
     border-bottom: 2px solid #131313;
     padding-bottom: 10px;
@@ -204,6 +206,8 @@ body {
 }
 
 .info-section h2 {
+    font-family: Fantasy;
+    letter-spacing: 1.5px;
     color: #131313;
     font-size: 1.8em;
     margin: 0 0 20px 0;
